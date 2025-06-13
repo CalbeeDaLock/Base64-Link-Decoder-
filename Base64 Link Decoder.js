@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Base64 Link Decoder 
 // @version      1.1
-// @description  Decode highlighted Base64 text to UTF-8 and open a webpage with the decoded text when the "a" key is pressed (Only works on specific URL pattern)
+// @description  Decode highlighted Base64 text to UTF-8 and open a webpage with the decoded text when the "a" key is pressed 
 // @match        
 // @match        
 // @match        
