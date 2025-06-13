@@ -11,15 +11,13 @@
 (function() {
     'use strict';
 
-    // Create a button element
     const button = document.createElement('button');
     button.innerText = 'Decode Base64 and Open Webpage';
     document.body.appendChild(button);
 
-    // Add event listener to the button
-    button.addEventListener('click', decodeBase64AndOpenWebpage);
+    button.addEventListener('click', decode);
 
-    function decodeBase64AndOpenWebpage() {
+    function decode() {
         // Get the highlighted text
         const selectedText = window.getSelection().toString();
 
@@ -54,10 +52,10 @@
         }
     }
 
-    // Add event listener to detect the "a" key press
+    // Edit the event.key if u want to trigger by another key
     document.addEventListener('keydown', function(event) {
         if (event.key === 'a') {
-            decodeBase64AndOpenWebpage();
+            decode();
         }
     });
 })();
